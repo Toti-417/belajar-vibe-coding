@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokopedia Clone - Web E-Commerce Sederhana</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">T</span>
+      <div>
+        <strong>Tokopedia</strong>
+        <span>Clone</span>
+      </div>
+    </div>
+    <div class="search-area">
+      <input id="search-input" type="search" placeholder="Cari produk, toko, atau kategori..." />
+    </div>
+    <button class="cart-button" aria-label="Buka Keranjang">
+      <span class="cart-count" id="cart-count">0</span>
+      Keranjang
+    </button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Belanja online mudah</p>
+      <h1>Web e-commerce sederhana<br />mirip Tokopedia</h1>
+      <p>Temukan produk favoritmu dari kategori elektronik, fashion, olahraga, dan kebutuhan sehari-hari.</p>
+      <button id="explore-btn">Jelajah Sekarang</button>
+    </div>
+    <div class="hero-image">
+      <div class="card promo-card">
+        <p class="promo-label">Promo Hari Ini</p>
+        <h2>Diskon hingga 50%</h2>
+        <p>Belanja produk favorit tanpa ribet.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="category-bar" aria-label="Kategori Tokopedia Clone">
+    <button class="category-item active" data-category="all">Semua</button>
+    <button class="category-item" data-category="elektronik">Elektronik</button>
+    <button class="category-item" data-category="fashion">Fashion</button>
+    <button class="category-item" data-category="olahraga">Olahraga</button>
+    <button class="category-item" data-category="perlengkapan">Perlengkapan</button>
+  </nav>
+
+  <main>
+    <section class="product-section">
+      <div class="section-title">
+        <h2>Produk Populer</h2>
+        <p>Pilih produk yang kamu butuhkan dan tambahkan ke keranjang.</p>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="elektronik">
+          <img src="https://via.placeholder.com/320x220?text=Smartphone" alt="Smartphone" />
+          <div class="product-info">
+            <h3>Smartphone Android</h3>
+            <p>Rp2.499.000</p>
+            <button class="add-button">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="elektronik">
+          <img src="https://via.placeholder.com/320x220?text=Laptop" alt="Laptop" />
+          <div class="product-info">
+            <h3>Laptop Ringan</h3>
+            <p>Rp6.199.000</p>
+            <button class="add-button">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="fashion">
+          <img src="https://via.placeholder.com/320x220?text=Sepatu" alt="Sepatu" />
+          <div class="product-info">
+            <h3>Sepatu Olahraga</h3>
+            <p>Rp399.000</p>
+            <button class="add-button">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="fashion">
+          <img src="https://via.placeholder.com/320x220?text=Tas+Ransel" alt="Tas Ransel" />
+          <div class="product-info">
+            <h3>Tas Ransel</h3>
+            <p>Rp249.000</p>
+            <button class="add-button">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="olahraga">
+          <img src="https://via.placeholder.com/320x220?text=Kamera" alt="Kamera" />
+          <div class="product-info">
+            <h3>Kamera Digital</h3>
+            <p>Rp3.499.000</p>
+            <button class="add-button">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="perlengkapan">
+          <img src="https://via.placeholder.com/320x220?text=Headphone" alt="Headphone" />
+          <div class="product-info">
+            <h3>Headphone Wireless</h3>
+            <p>Rp299.000</p>
+            <button class="add-button">Tambah ke Keranjang</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Simple Tokopedia-style web marketplace. Dibuat untuk latihan e-commerce.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
